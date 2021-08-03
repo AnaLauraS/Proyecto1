@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Proyectos - Vista Kanban</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="logo">
+        <div>
+            <div>
+                <span>"nombre "</span><span>"apellido"</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="http://">Configuración</a></li>
+                    <li><a href="http://">Salir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <a href=""><button>Proyectos</button></a>
+            <a href=""><button>Tareas pendientes</button></a>
+        </nav>
+        <a href=""><button>Nuevo proyecto</button></a>
+    </section>
+    <main>
+        <div>
+            <!--no sé que será pero aquí va la "ruta", es decir, los estados de los proyectos
+            Son imágenes cuadradas que cuando las unis, forma una línea horizontal
+        Hay que ver cómo la transformamos en vertical, porque si solo le ponemos flex en columnas, queda un estado cuadrado sobre el otro, no una linea vertical
+        ver qué es el tema del role en el div-->
+        </div>
+        <div>
+            <!--Tiene que haber un div por estado.
+            para cada estado, del mismo espacio, van a estar unos cuadrados que serán los proyectos
+            Cada cuadrado es un <a> referenciando a la página del proyecto.
+            Hay que ver como sería en la version movil, porque en la desktop, los proyectos se mencionan hacia abajo y no hay problema. En la versión móvil, una vez que se acabe el espacio lateral hay dos opciones: o ampliar el espacio del estado hacía abajo, o que pueda mover esa parte del estado hacia los costados (tipo la lista de peliculas de netflix)
+        Este es el codigo en netflix de todo el div que tiene los items <ul>
+            .slider {
+            position: relative;
+            margin: 0;
+            touch-action: pan-y;
+        Ademas tiene una flechita, que es una imagen y que al presionar en ella, mueve en el eje x la grilla-->
+        </div>
+        <a href=""><button>+</button></a>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados. <a href="http://">Contactanos</a></p>
+    </footer>
+    
+</body>
+</html>
