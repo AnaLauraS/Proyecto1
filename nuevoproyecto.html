@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de proyectos - Nuevo proyecto</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="logo">
+        <div>
+            <div>
+                <span>"nombre "</span><span>"apellido"</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="http://">Configuración</a></li>
+                    <li><a href="http://">Salir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <main>
+        <h1>Proyecto nuevo</h1>
+        <div>
+            <h2>Datos generales</h2>
+            <form action="" method="post">
+                <label for="nom">Nombre:</label>
+                <input type="text" name="nom" id="nom" required>
+                <label for="etapa">Etapa:</label>
+                <select name="etapa" id="etapa" required>
+                    <option value="as">AS IS</option>
+                    <option value="to">TO BE</option>
+                    <option value="bc">Business Case</option>
+                    <option value="ddf">DDF</option>
+                    <option value="desarrollo">Desarrollo</option>
+                    <option value="implementado">Implementado</option>
+                    <option value="cancelado">Cancelado</option>
+                </select>
+                <label for="area">Área:</label>
+                <input type="text" name="area" id="area">
+                <label for="contactos">Contactos:</label>
+                <select name="cont" id="cont">
+                    <option value="">var.lista.contactos</option>
+                    <option value="">+</option>
+                </select>
+                <label for="vol">Volumen:</label>
+                <input type="text" name="vol" id="vol">
+                <label for="x">VAN/CAPEX:</label>
+                <input type="number" name="x" id="x">
+                <label for="comentario">Comentarios:</label>
+                <input type="text" name="comentario" id="comentario" ><!--agregar las lineas que faltan para que sea un text area-->
+            </form>
+        </div>
+        <div>
+            <h2>AS IS</h2>
+            <form action="" method="post">
+                <label for="app">Aplicativos:</label>
+                <input type="text" name="app" id="app">
+                <label for="frec">Frecuencia:</label>
+                <select name="frec" id="frec">
+                    <option value="dias hab">Lunes a viernes</option>
+                    <option value="diaria">Lunes a lunes</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="quinc">Quincenal</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="a demanda">A demanda</option>
+                </select>
+                <label for="cantejec">Cantidad de ejecuciones:</label>
+                <input type="number" name="cantejec" id="cantejec">
+                <label for="tiempo">Tiempo por ejecución (minutos):</label>
+                <input type="number" name="tiempo" id="tiempo">
+                <label for="tiempototal">Tiempo total mensual:</label>
+                <input type="number" name="tiempototal" id="tiempototal"> <!--esta es una formula: frec x cantejec x tiempo / 60 = horas-->
+                <label for="fte">FTE:</label>
+                <input type="number" name="fte" id="fte"> <!--es una formula: tiempototal / 160-->
+                <label for="pasosasis">Principales pasos:</label>
+                <input type="text" name="pasosasis" id="pasosasis" ><!--agregar las lineas que faltan para que sea un text area-->
+            </form>
+        </div>
+        <div>
+            <h2>TO BE</h2>
+            <form action="" method="post">
+                <label for="appcheck">¿Usa los mismos aplicativos que en el AS IS?</label>
+                <input type="checkbox" name="appcheck" id="appcheck">
+                <label for="app2">Aplicativos:</label>
+                <input type="text" name="app2" id="app2"> <!--si el checkbox es presionado, este no se puede modificar y pone los aplicativos del as is-->
+                <label for="frec2">Frecuencia:</label>
+                <select name="frec2" id="frec2">
+                    <option value="dias hab">Lunes a viernes</option>
+                    <option value="diaria">Lunes a lunes</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="quinc">Quincenal</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="a demanda">A demanda</option>
+                </select>
+                <label for="cantejec2">Cantidad de ejecuciones:</label>
+                <input type="number" name="cantejec2" id="cantejec2">
+                <label for="porcentaje">Porcentaje automatizado:</label>
+                <input type="number" name="porcentaje" id="porcentaje">
+                <label for="tiempototal2">Tiempo total mensual:</label>
+                <input type="number" name="tiempototal2" id="tiempototal2"> <!--esta es una formula: frec2 x cantejec2 x tiempo x porcentaje / 60 = horas-->
+                <label for="pasostobe">Principales pasos:</label>
+                <input type="text" name="pasostobe" id="pasostobe" ><!--agregar las lineas que faltan para que sea un text area-->
+            </form>
+        </div>
+    </main>
+
+    <button type="submit">GUARDAR</button>
+    <button type="reset">CANCELAR</button>
+    
+    <footer>
+        <p>Todos los derechos reservados. <a href="http://">Contactanos</a></p>
+    </footer>
+</body>
+</html>
