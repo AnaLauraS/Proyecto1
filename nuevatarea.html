@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de proyectos - Nueva tarea</title>
+</head>
+<body>
+    <header>
+        <img src="" alt="logo">
+        <div>
+            <div>
+                <span>"nombre "</span><span>"apellido"</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="http://">Configuración</a></li>
+                    <li><a href="http://">Salir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+
+    <main>
+        <h1>Tarea nueva</h1>
+        <div>
+            <form action="" method="post">
+                <label for="est">Estado:</label>
+                <select name="est" id="est" required>
+                    <option value="pend2" selected>Pendiente</option>
+                    <option value="cumpl">Cumplida</option>
+                </select>
+                <label for="proy">Proyecto:</label>
+                <select name="proy" id="proy" required>
+                    <option value="">listado de proyectos abiertos (es decir, que no tienen estado cancelado o cumplido</option>
+                </select> <!--si entró a esta sección desde la hoja del proyecto, este campo ya debería venir rellenado-->
+                <label for="tipo">Tipo:</label>
+                <select name="tipo" id="tipo" required>
+                    <option value="tipo_email">Email</option>
+                    <option value="tipo_reunión">Reunión</option>
+                    <option value="tipo_analisis">Análisis</option>
+                </select>
+                <label for="detalles">Detalles:</label>
+                <input type="text" name="detalles" id=""> <!--ponerle la cantidad de lineas-->
+                <label for="fecha">Fecha límite:</label>
+                <input type="date" name="fecha" id="fecha">
+            </form>
+            <button type="submit">GUARDAR</button>
+            <button type="reset">CANCELAR</button>
+        </div>
+        <div>
+            <section>
+                <img src="" alt="flecha para cambiar de mes">
+                <span>"mes"</span>
+                <img src="" alt="flecha para cambiar de mes">
+            </section>
+            <div>
+                <!--ya existen códigos para armar calendarios. Y se puede vincular un calendario google. incluso algunos ejemplos ya vienen con los botones para cambiar de mes y todo.
+                solo tendria que programar para que aparezcan las tareas y la estética-->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados. <a href="http://">Contactanos</a></p>
+    </footer>
+</body>
+</html>

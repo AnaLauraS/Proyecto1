@@ -1,0 +1,12 @@
+<!--DETALLE DE CALENDARIO:
+    cuando hace click en un dia del calendario de tareas pendientes, ve un cuadro que arriba tiene la fecha y el listado tipo boton de cada tarea. como las tareas no tienen titulo, se verá primero el icono de tipo de tarea (email, reunion o analisis) y el nombre del proyecto al que pertenece. ambos, ícono y nombre, son un boton que abre el detalle de tarea. a la derecha arriba la X para cerrar-->
+
+<!--DETALLE DE TAREA:
+    cuando hace click en una tarea en el calendario, ve un cuadro que a la iquierda, superior tiene el ícono de tipo de tarea; en el centro la fecha; derecha arriba la X para cerrar; luego uno abajo del otro: boton del nombre del proyecto (para ir a la pagina principal del proyecto), luego detalle de la tarea y por ultimo un checkbox para decir si ya está completada-->
+
+<!--AGREGAR CONTACTO:
+    cuando presiona el + para agregar contacto al proyecto, abre ventanita tipo formulario:
+    nombre: puede seleccionar de la lista, a medida que va escribiendo. si selecciona de la lista, le trae los otros datos, pero los puede modificar, y entonces se crearía un nuevo contacto. el ID del contacto es el nombre y el rol;
+    rol:
+    comentarios: esto sirve para escribir tipo "conoce bien tal paso del proceso". no es obligatorio
+    botones guardar y cancelar-->
